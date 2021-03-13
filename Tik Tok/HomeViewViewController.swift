@@ -11,9 +11,23 @@ import UIKit
 class HomeViewViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
+    
+    var localFilesViewModel = LocalFilesViewModel()
+    
+    var tiktokAr = [TikToks]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        localFilesViewModel.readJsonFile() { (toks, error) in
+           
+            
+            for t in toks!.toks {
+                self.tiktokAr.append(t)
+            }
+            
+             self.collectionView.reloadData()
+        }
         // Do any additional setup after loading the view.
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
@@ -42,21 +56,24 @@ class HomeViewViewController: UIViewController {
 
 extension HomeViewViewController : UICollectionViewDelegate {
     
-    /*
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
             let itemWidth = view.bounds.width
-            let itemHeight = view.bounds.height + 40
+            let itemHeight = view.bounds.height //+ 40
             return CGSize(width: itemWidth, height: itemHeight)
-    } */
+    }
 }
 
 extension HomeViewViewController : UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        localFilesViewModel.numberOfItemsInCollection()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "post", for: indexPath) as! PostCollectionViewCell
+        
+        cell.bindDtata(tok: tiktokAr[indexPath.row])
         
         return cell
     }
@@ -65,4 +82,18 @@ extension HomeViewViewController : UICollectionViewDataSource {
         
     }
     
+}
+
+extension HomeViewViewController : UICollectionViewDelegateFlowLayout
+{
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+        return 0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets
+        {
+            return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
 }

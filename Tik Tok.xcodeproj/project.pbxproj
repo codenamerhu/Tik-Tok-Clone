@@ -21,6 +21,10 @@
 		50C0762625DE439F002540D9 /* TikTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762525DE439F002540D9 /* TikTabBarControllerViewController.swift */; };
 		50C0762825DE4674002540D9 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762725DE4674002540D9 /* HomeViewViewController.swift */; };
 		50C0762A25DE4DE3002540D9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */; };
+		E526FDA925FCD9DE0081BFE6 /* Toks.json in Resources */ = {isa = PBXBuildFile; fileRef = E526FDA825FCD9DE0081BFE6 /* Toks.json */; };
+		E526FDAB25FCDD340081BFE6 /* LocalFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */; };
+		E526FDAD25FCDDDA0081BFE6 /* Toks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526FDAC25FCDDDA0081BFE6 /* Toks.swift */; };
+		E598157F25F7F348003959C0 /* TabClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598157E25F7F348003959C0 /* TabClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +65,11 @@
 		50C0762525DE439F002540D9 /* TikTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		50C0762725DE4674002540D9 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		E526FDA825FCD9DE0081BFE6 /* Toks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Toks.json; sourceTree = "<group>"; };
+		E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesViewModel.swift; sourceTree = "<group>"; };
+		E526FDAC25FCDDDA0081BFE6 /* Toks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toks.swift; sourceTree = "<group>"; };
+		E526FDAE25FD0A550081BFE6 /* Tik Tok.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tik Tok.entitlements"; sourceTree = "<group>"; };
+		E598157E25F7F348003959C0 /* TabClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +120,8 @@
 		50C075E925DD83A0002540D9 /* Tik Tok */ = {
 			isa = PBXGroup;
 			children = (
+				E526FDAE25FD0A550081BFE6 /* Tik Tok.entitlements */,
+				E526FDA825FCD9DE0081BFE6 /* Toks.json */,
 				50C075EA25DD83A0002540D9 /* AppDelegate.swift */,
 				50C075EC25DD83A0002540D9 /* SceneDelegate.swift */,
 				50C075EE25DD83A0002540D9 /* ViewController.swift */,
@@ -124,6 +135,9 @@
 				50C0762525DE439F002540D9 /* TikTabBarControllerViewController.swift */,
 				50C0762725DE4674002540D9 /* HomeViewViewController.swift */,
 				50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */,
+				E598157E25F7F348003959C0 /* TabClient.swift */,
+				E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */,
+				E526FDAC25FCDDDA0081BFE6 /* Toks.swift */,
 			);
 			path = "Tik Tok";
 			sourceTree = "<group>";
@@ -252,6 +266,7 @@
 			files = (
 				50C075FA25DD83AB002540D9 /* LaunchScreen.storyboard in Resources */,
 				50C075F725DD83AB002540D9 /* Assets.xcassets in Resources */,
+				E526FDA925FCD9DE0081BFE6 /* Toks.json in Resources */,
 				50C075F225DD83A0002540D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +295,14 @@
 				50C075EF25DD83A0002540D9 /* ViewController.swift in Sources */,
 				50C0762425DDDDE6002540D9 /* File.swift in Sources */,
 				50C0762825DE4674002540D9 /* HomeViewViewController.swift in Sources */,
+				E526FDAB25FCDD340081BFE6 /* LocalFilesViewModel.swift in Sources */,
 				50C0762025DD87C6002540D9 /* CustomTabBarViewController.swift in Sources */,
+				E598157F25F7F348003959C0 /* TabClient.swift in Sources */,
 				50C075F525DD83A0002540D9 /* Tik_Tok.xcdatamodeld in Sources */,
 				50C075EB25DD83A0002540D9 /* AppDelegate.swift in Sources */,
 				50C0762625DE439F002540D9 /* TikTabBarControllerViewController.swift in Sources */,
 				50C075ED25DD83A0002540D9 /* SceneDelegate.swift in Sources */,
+				E526FDAD25FCDDDA0081BFE6 /* Toks.swift in Sources */,
 				50C0762A25DE4DE3002540D9 /* PostCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,8 +476,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tik Tok/Tik Tok.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W5XNMDMSNN;
+				DEVELOPMENT_TEAM = SBN2Z2C2GH;
 				INFOPLIST_FILE = "Tik Tok/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -476,8 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Tik Tok/Tik Tok.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = W5XNMDMSNN;
+				DEVELOPMENT_TEAM = SBN2Z2C2GH;
 				INFOPLIST_FILE = "Tik Tok/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
