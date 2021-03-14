@@ -63,6 +63,15 @@ extension HomeViewViewController : UICollectionViewDelegate {
             let itemHeight = view.bounds.height //+ 40
             return CGSize(width: itemWidth, height: itemHeight)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "post", for: indexPath) as! PostCollectionViewCell
+        
+        cell.pauseVid()
+        print("v: \(indexPath.row) didEnd")
+    }
+    
+    
 }
 
 extension HomeViewViewController : UICollectionViewDataSource {
@@ -81,6 +90,7 @@ extension HomeViewViewController : UICollectionViewDataSource {
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         
     }
+    
     
 }
 

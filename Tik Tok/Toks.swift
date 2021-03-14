@@ -15,6 +15,6 @@ struct Toks: Codable {
 struct TikToks : Codable {
     var username: String
     var title: String?
-    var video: URL
+    var video: String
     var song: String
 }
