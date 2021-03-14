@@ -34,7 +34,26 @@ class HomeViewViewController: UIViewController {
         self.collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         
         self.collectionView.isPagingEnabled = true
+        
+        NotificationCenter.default.addObserver(self,
+        selector: #selector(self.appEnteredFromBackground),
+        name: NSNotification.Name.NSExtensionHostWillEnterForeground, object: nil)
 
+
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        pausePlayeVideos()
     }
     /*
     func snapToNearestCell(scrollView: UIScrollView) {
@@ -65,10 +84,33 @@ extension HomeViewViewController : UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "post", for: indexPath) as! PostCollectionViewCell
-        
-        cell.pauseVid()
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "post", for: indexPath) as! PostCollectionViewCell
+//
+//        cell.pauseVid()
         print("v: \(indexPath.row) didEnd")
+        
+        
+        if let videoCell = cell as? ASAutoPlayVideoLayerContainer, let _ = videoCell.videoURL {
+            ASVideoPlayerController.sharedVideoPlayer.removeLayerFor(cell: videoCell)
+        }
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        pausePlayeVideos()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if !decelerate {
+            pausePlayeVideos()
+        }
+    }
+    
+    func pausePlayeVideos(){
+        ASVideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(collectionView: collectionView)
+    }
+    
+    @objc func appEnteredFromBackground() {
+        ASVideoPlayerController.sharedVideoPlayer.pausePlayeVideosFor(collectionView: collectionView, appEnteredFromBackground: true)
     }
     
     
