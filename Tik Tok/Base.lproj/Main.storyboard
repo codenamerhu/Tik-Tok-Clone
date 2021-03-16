@@ -153,7 +153,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="7Bv-p3-JEh"/>
                                                             <constraint firstAttribute="width" constant="40" id="A84-go-0bR"/>
                                                         </constraints>
-                                                        <state key="normal" image="plus.square.fill" catalog="system"/>
+                                                        <state key="normal" image="add"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -503,11 +503,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="add" width="851" height="561"/>
         <image name="house.fill" catalog="system" width="64" height="52"/>
         <image name="magnifyingglass.circle.fill" catalog="system" width="64" height="60"/>
         <image name="message.circle" catalog="system" width="64" height="60"/>
         <image name="music.note" catalog="system" width="48" height="64"/>
         <image name="person.fill" catalog="system" width="64" height="60"/>
-        <image name="plus.square.fill" catalog="system" width="64" height="56"/>
     </resources>
 </document>
