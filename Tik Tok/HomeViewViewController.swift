@@ -18,7 +18,9 @@ class HomeViewViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        collectionView.contentInsetAdjustmentBehavior = .never
         localFilesViewModel.readJsonFile() { (toks, error) in
            
             
@@ -47,6 +49,8 @@ class HomeViewViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        collectionView.contentInsetAdjustmentBehavior = .never
+        
         super.viewWillAppear(animated)
         
     }
