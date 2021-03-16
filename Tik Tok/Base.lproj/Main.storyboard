@@ -117,7 +117,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="YLp-dQ-Pjv"/>
                                                             <constraint firstAttribute="width" constant="40" id="lZI-oP-swk"/>
                                                         </constraints>
-                                                        <state key="normal" image="house.fill" catalog="system"/>
+                                                        <state key="normal" image="home"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -135,7 +135,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="HpQ-wf-n8V"/>
                                                             <constraint firstAttribute="width" constant="40" id="XLj-3i-kaX"/>
                                                         </constraints>
-                                                        <state key="normal" image="magnifyingglass.circle.fill" catalog="system"/>
+                                                        <state key="normal" image="Discover"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,7 +153,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="7Bv-p3-JEh"/>
                                                             <constraint firstAttribute="width" constant="40" id="A84-go-0bR"/>
                                                         </constraints>
-                                                        <state key="normal" image="add"/>
+                                                        <state key="normal" image="TikTok+ Icon"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -171,7 +171,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="P6a-Vh-R3V"/>
                                                             <constraint firstAttribute="width" constant="40" id="rlv-3k-tG7"/>
                                                         </constraints>
-                                                        <state key="normal" image="message.circle" catalog="system"/>
+                                                        <state key="normal" image="message" catalog="system"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -189,7 +189,7 @@
                                                             <constraint firstAttribute="height" constant="40" id="M7J-ve-HQB"/>
                                                             <constraint firstAttribute="width" constant="40" id="rLp-Kw-ZEw"/>
                                                         </constraints>
-                                                        <state key="normal" image="person.fill" catalog="system"/>
+                                                        <state key="normal" image="Me"/>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -346,52 +346,55 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jla-YY-Aiu">
                                                             <rect key="frame" x="0.0" y="50" width="50" height="50"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y3Q-xB-buo">
-                                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giF-9s-1kF">
+                                                                    <rect key="frame" x="10" y="12" width="30" height="26"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="30" id="L9R-C8-eTg"/>
-                                                                        <constraint firstAttribute="height" constant="30" id="nCH-Jt-QeX"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="fOn-np-bQI"/>
+                                                                        <constraint firstAttribute="height" constant="26" id="u9x-xb-d96"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <state key="normal" image="likes"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="y3Q-xB-buo" firstAttribute="centerX" secondItem="jla-YY-Aiu" secondAttribute="centerX" id="9Y8-eO-1pi"/>
-                                                                <constraint firstItem="y3Q-xB-buo" firstAttribute="centerY" secondItem="jla-YY-Aiu" secondAttribute="centerY" id="GPb-8N-t0q"/>
+                                                                <constraint firstItem="giF-9s-1kF" firstAttribute="centerX" secondItem="jla-YY-Aiu" secondAttribute="centerX" id="P69-Oq-syj"/>
+                                                                <constraint firstItem="giF-9s-1kF" firstAttribute="centerY" secondItem="jla-YY-Aiu" secondAttribute="centerY" id="PNq-S5-lHF"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ttn-cF-krT">
                                                             <rect key="frame" x="0.0" y="100" width="50" height="50"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TTk-Hf-3QL">
-                                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naX-2K-Cdd">
+                                                                    <rect key="frame" x="10" y="11" width="30" height="28"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="width" constant="30" id="cls-pQ-ZPz"/>
-                                                                        <constraint firstAttribute="height" constant="30" id="g5f-vj-ElI"/>
+                                                                        <constraint firstAttribute="height" constant="28" id="QGw-56-FAQ"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="WVS-GD-ATl"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <state key="normal" image="love"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="TTk-Hf-3QL" firstAttribute="centerX" secondItem="Ttn-cF-krT" secondAttribute="centerX" id="GUe-PY-HK7"/>
-                                                                <constraint firstItem="TTk-Hf-3QL" firstAttribute="centerY" secondItem="Ttn-cF-krT" secondAttribute="centerY" id="nfm-IC-zuw"/>
+                                                                <constraint firstItem="naX-2K-Cdd" firstAttribute="centerY" secondItem="Ttn-cF-krT" secondAttribute="centerY" id="1Xd-iV-SaI"/>
+                                                                <constraint firstItem="naX-2K-Cdd" firstAttribute="centerX" secondItem="Ttn-cF-krT" secondAttribute="centerX" id="Rdz-Jk-YVF"/>
                                                             </constraints>
                                                         </view>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hD-gv-I7P">
                                                             <rect key="frame" x="0.0" y="150" width="50" height="50"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Bw0-cq-IHH">
-                                                                    <rect key="frame" x="10" y="10" width="30" height="30"/>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cfm-56-pUU">
+                                                                    <rect key="frame" x="10" y="15" width="30" height="20"/>
                                                                     <constraints>
-                                                                        <constraint firstAttribute="height" constant="30" id="AD7-Hk-Vy3"/>
-                                                                        <constraint firstAttribute="width" constant="30" id="Fgz-dv-fha"/>
+                                                                        <constraint firstAttribute="width" constant="30" id="1MM-Qs-iP4"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="oRA-ET-qya"/>
                                                                     </constraints>
-                                                                </imageView>
+                                                                    <state key="normal" image="Fill 1"/>
+                                                                </button>
                                                             </subviews>
                                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <constraints>
-                                                                <constraint firstItem="Bw0-cq-IHH" firstAttribute="centerY" secondItem="6hD-gv-I7P" secondAttribute="centerY" id="mbo-w7-nQ4"/>
-                                                                <constraint firstItem="Bw0-cq-IHH" firstAttribute="centerX" secondItem="6hD-gv-I7P" secondAttribute="centerX" id="njN-ki-sLq"/>
+                                                                <constraint firstItem="Cfm-56-pUU" firstAttribute="centerX" secondItem="6hD-gv-I7P" secondAttribute="centerX" id="3OJ-6s-Jk6"/>
+                                                                <constraint firstItem="Cfm-56-pUU" firstAttribute="centerY" secondItem="6hD-gv-I7P" secondAttribute="centerY" id="Fux-MU-eml"/>
                                                             </constraints>
                                                         </view>
                                                     </subviews>
@@ -437,7 +440,7 @@
                                                 <constraint firstItem="WN5-eE-JXj" firstAttribute="leading" secondItem="7Hc-eh-Fbo" secondAttribute="trailing" constant="10" id="aSE-DF-cyD"/>
                                                 <constraint firstItem="XUa-LF-Zhj" firstAttribute="top" secondItem="WN5-eE-JXj" secondAttribute="bottom" constant="14.5" id="d29-rU-hBc"/>
                                                 <constraint firstItem="k5A-G0-r1E" firstAttribute="top" secondItem="V2g-bX-qPn" secondAttribute="top" constant="428" id="hND-Ma-CJ0"/>
-                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KDO-hG-u8z" secondAttribute="trailing" constant="20" symbolic="YES" id="hed-Dx-ZfS"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KDO-hG-u8z" secondAttribute="trailing" constant="190" id="hed-Dx-ZfS"/>
                                                 <constraint firstAttribute="trailing" secondItem="8Vf-cZ-Wdw" secondAttribute="trailing" constant="10" id="rzd-kc-SkE"/>
                                                 <constraint firstAttribute="trailing" secondItem="k5A-G0-r1E" secondAttribute="trailing" constant="10" id="zxW-qk-Dbo"/>
                                             </constraints>
@@ -503,11 +506,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="851" height="561"/>
-        <image name="house.fill" catalog="system" width="64" height="52"/>
-        <image name="magnifyingglass.circle.fill" catalog="system" width="64" height="60"/>
-        <image name="message.circle" catalog="system" width="64" height="60"/>
+        <image name="Discover" width="21" height="21"/>
+        <image name="Fill 1" width="38" height="28"/>
+        <image name="Me" width="53" height="37"/>
+        <image name="TikTok+ Icon" width="43" height="27"/>
+        <image name="home" width="24" height="21"/>
+        <image name="likes" width="37" height="33"/>
+        <image name="love" width="37" height="35"/>
+        <image name="message" catalog="system" width="64" height="56"/>
         <image name="music.note" catalog="system" width="48" height="64"/>
-        <image name="person.fill" catalog="system" width="64" height="60"/>
     </resources>
 </document>
