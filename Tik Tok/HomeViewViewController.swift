@@ -33,6 +33,7 @@ class HomeViewViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
+        self.collectionView.prefetchDataSource = self
         self.collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
         
         self.collectionView.isPagingEnabled = true
@@ -120,7 +121,19 @@ extension HomeViewViewController : UICollectionViewDelegate {
     
 }
 
-extension HomeViewViewController : UICollectionViewDataSource {
+extension HomeViewViewController : UICollectionViewDataSource, UICollectionViewDataSourcePrefetching{
+    func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
+            for indexPath in indexPaths {
+            let model = tiktokAr[indexPath.row]
+            //asyncFetcher.fetchAsync(model.identifier)
+                
+                if let cell = collectionView.cellForItem(at: indexPath) as? PostCollectionViewCell {
+                 ////
+                    cell.bindDtata(tok: model)
+                }
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         localFilesViewModel.numberOfItemsInCollection()
     }
@@ -134,7 +147,6 @@ extension HomeViewViewController : UICollectionViewDataSource {
     }
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        
     }
     
     

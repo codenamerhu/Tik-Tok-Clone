@@ -13,18 +13,6 @@ import MediaPlayer
 import AudioToolbox
 
 class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContainer  {
-    func visibleVideoHeight() -> CGFloat {
-        let videoFrameInParentSuperView: CGRect? = self.superview?.superview?.convert(vidH.frame, from: vidH)
-        guard let videoFrame = videoFrameInParentSuperView,
-            let superViewFrame = superview?.frame else {
-             return 0
-        }
-        let visibleVideoFrame = videoFrame.intersection(superViewFrame)
-        print("(visibleVideoFrame)")
-        return visibleVideoFrame.size.height
-        
-//        return contentView.bounds.height
-    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,6 +25,7 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var songlabel: UILabel!
+    @IBOutlet weak var titleHeightConstraint: NSLayoutConstraint!
     let vidH = UIImageView()
     
     var playerController: ASVideoPlayerController?
@@ -61,14 +50,14 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        vidH.frame = self.bounds
+        
         //videoLayer.frame = self.frame
         
         vidH.backgroundColor = UIColor.gray.withAlphaComponent(0.7)
 //        vidH.clipsToBounds = true
         vidH.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
         
-        videoLayer.backgroundColor = UIColor.red.cgColor //UIColor.clear.cgColor
+        videoLayer.backgroundColor = UIColor.clear.cgColor //UIColor.clear.cgColor
 //        videoLayer.videoGravity = .resizeAspectFill
         videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
@@ -80,18 +69,43 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
     
     
     func bindDtata(tok: TikToks) {
+    
+        viewsSizes()
+        
         usernameLabel.text = "@" + tok.username
         titleLabel.text = tok.title
         songlabel.text = tok.song
         
+        if (tok.song.count > 20 || tok.song.count < 60) {
+            titleHeightConstraint.constant = 38
+        } else if (tok.song.count > 60 || tok.song.count < 100) {
+            titleHeightConstraint.constant = 54
+        } else if (tok.song.count > 100 || tok.song.count > 160) {
+            titleHeightConstraint.constant = 98
+        }
         
         self.videoURL = tok.video
-        videoLayer.frame = CGRect(x: 0, y: 0, width: self.contentView.bounds.size.width, height: self.frame.size.height)
-        print("self \(frame.size.height) \(vidH.frame)")
-//        vidH.layer.addSublayer(videoLayer)
-        //vidH.layer.addSublayer(layer)
+        
         //player.volume = 0
         
+    }
+    
+    func viewsSizes(){
+        vidH.frame = CGRect(x: 0, y: 0, width: self.contentView.bounds.size.width, height: self.frame.size.height)
+        videoLayer.frame = CGRect(x: 0, y: 0, width: self.contentView.bounds.size.width, height: self.frame.size.height)
+    }
+    
+    func visibleVideoHeight() -> CGFloat {
+            let videoFrameInParentSuperView: CGRect? = self.superview?.superview?.convert(vidH.frame, from: vidH)
+            guard let videoFrame = videoFrameInParentSuperView,
+                let superViewFrame = superview?.frame else {
+                 return 0
+            }
+            let visibleVideoFrame = videoFrame.intersection(superViewFrame)
+            print("(visibleVideoFrame)")
+            return visibleVideoFrame.size.height
+            
+    //        return contentView.bounds.height
     }
     
 }
