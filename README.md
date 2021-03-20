@@ -5,6 +5,7 @@ Play/pause videos automatically in UITCollectionView when an UICollectionViewCel
 * Autolayout UI that is similar to tik tok
 * Automatic video play when video view is visible and option to easily pause/play any video
 * Mute/Unmute videos
+* Prefetch videos
 * Videos are cached in memory and will be removed when there is memory pressure
 * The scroll of UICollectionView is super smooth since video assets are downloaded on background thread and played only when assets are 
 completely downloaded ensuring the main thead is never blocked
