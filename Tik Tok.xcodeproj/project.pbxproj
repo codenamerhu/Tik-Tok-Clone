@@ -27,6 +27,8 @@
 		E526FDAB25FCDD340081BFE6 /* LocalFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */; };
 		E526FDAD25FCDDDA0081BFE6 /* Toks.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526FDAC25FCDDDA0081BFE6 /* Toks.swift */; };
 		E598157F25F7F348003959C0 /* TabClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E598157E25F7F348003959C0 /* TabClient.swift */; };
+		E5B9D7792606456300559948 /* ASVideoLayerObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9D7782606456300559948 /* ASVideoLayerObject.swift */; };
+		E5B9D77B260645CA00559948 /* ASVideoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B9D77A260645CA00559948 /* ASVideoContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,8 @@
 		E526FDAC25FCDDDA0081BFE6 /* Toks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toks.swift; sourceTree = "<group>"; };
 		E526FDAE25FD0A550081BFE6 /* Tik Tok.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Tik Tok.entitlements"; sourceTree = "<group>"; };
 		E598157E25F7F348003959C0 /* TabClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabClient.swift; sourceTree = "<group>"; };
+		E5B9D7782606456300559948 /* ASVideoLayerObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVideoLayerObject.swift; sourceTree = "<group>"; };
+		E5B9D77A260645CA00559948 /* ASVideoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVideoContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				E51797C725FE340800AE4C90 /* ASVideoPlayerController.swift */,
+				E5B9D7782606456300559948 /* ASVideoLayerObject.swift */,
+				E5B9D77A260645CA00559948 /* ASVideoContainer.swift */,
 			);
 			path = VideoPlayLibrary;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				50C075EF25DD83A0002540D9 /* ViewController.swift in Sources */,
+				E5B9D7792606456300559948 /* ASVideoLayerObject.swift in Sources */,
 				E52668A325FFF26900D59324 /* ImageView extension.swift in Sources */,
 				50C0762425DDDDE6002540D9 /* File.swift in Sources */,
 				50C0762825DE4674002540D9 /* HomeViewViewController.swift in Sources */,
@@ -344,6 +351,7 @@
 				50C075ED25DD83A0002540D9 /* SceneDelegate.swift in Sources */,
 				E526FDAD25FCDDDA0081BFE6 /* Toks.swift in Sources */,
 				50C0762A25DE4DE3002540D9 /* PostCollectionViewCell.swift in Sources */,
+				E5B9D77B260645CA00559948 /* ASVideoContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

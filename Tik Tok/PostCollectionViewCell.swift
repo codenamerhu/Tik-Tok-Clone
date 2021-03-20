@@ -26,6 +26,12 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var songlabel: UILabel!
     @IBOutlet weak var titleHeightConstraint: NSLayoutConstraint!
+    
+    
+    @IBOutlet weak var likesCount: UILabel!
+    @IBOutlet weak var commentsCount: UILabel!
+    @IBOutlet weak var shareCount: UILabel!
+    
     let vidH = UIImageView()
     
     var playerController: ASVideoPlayerController?
@@ -44,6 +50,10 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
         titleLabel.text = nil
         songlabel.text = nil
         vidH.imageURL = nil
+        
+        likesCount.text = nil
+        commentsCount.text = nil
+        shareCount.text = nil
         super.prepareForReuse()
     }
     
@@ -58,7 +68,6 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
         vidH.layer.borderColor = UIColor.gray.withAlphaComponent(0.3).cgColor
         
         videoLayer.backgroundColor = UIColor.clear.cgColor //UIColor.clear.cgColor
-//        videoLayer.videoGravity = .resizeAspectFill
         videoLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         
         vidH.layer.addSublayer(videoLayer)
@@ -75,6 +84,10 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
         usernameLabel.text = "@" + tok.username
         titleLabel.text = tok.title
         songlabel.text = tok.song
+        likesCount.text = tok.likes
+        commentsCount.text = tok.comments
+        shareCount.text = tok.shares
+        
         
         if (tok.song.count > 20 || tok.song.count < 60) {
             titleHeightConstraint.constant = 38
@@ -85,8 +98,6 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
         }
         
         self.videoURL = tok.video
-        
-        //player.volume = 0
         
     }
     
@@ -102,10 +113,7 @@ class PostCollectionViewCell: UICollectionViewCell, ASAutoPlayVideoLayerContaine
                  return 0
             }
             let visibleVideoFrame = videoFrame.intersection(superViewFrame)
-            print("(visibleVideoFrame)")
             return visibleVideoFrame.size.height
-            
-    //        return contentView.bounds.height
     }
     
 }

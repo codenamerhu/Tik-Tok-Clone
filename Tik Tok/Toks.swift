@@ -17,4 +17,7 @@ struct TikToks : Codable {
     var title: String?
     var video: String
     var song: String
+    var likes: String
+    var comments: String
+    var shares: String
 }

@@ -8,86 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tik_Tok" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="RXC-Db-UdG"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="b5Z-QH-ZSZ">
-            <objects>
-                <viewController id="ANh-VU-Vnd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bxu-A6-lxM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="hsv-58-iW8"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="tNm-na-rdf"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tge-3A-KZJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-994" y="-563"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="Tvv-qV-MLo">
-            <objects>
-                <viewController id="yns-j3-kxL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="LQT-cG-fBF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="EGC-8f-eiY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="pu5-lg-eQw"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N6a-yV-aPt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="13" y="-577"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="ohG-ey-aT9">
-            <objects>
-                <viewController id="uul-z4-UXw" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7pZ-3F-BTW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="1OP-0J-m01"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="L7i-Yy-dEO"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AVY-9W-v4q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1032" y="-594"/>
-        </scene>
-        <!--Item-->
-        <scene sceneID="rlx-Bi-IbD">
-            <objects>
-                <viewController id="f3K-o9-Vsb" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Skg-TA-sSJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="cBM-bW-frR"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="HLh-3f-mIa"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SD1-Jb-3On" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-939" y="142"/>
-        </scene>
         <!--Tik Tab Bar Controller View Controller-->
         <scene sceneID="atI-cg-22q">
             <objects>
@@ -286,13 +206,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="94j-Zi-mtz"/>
-                        <segue destination="f3K-o9-Vsb" kind="relationship" relationship="viewControllers" id="GcI-Bg-9Az"/>
-                        <segue destination="ANh-VU-Vnd" kind="relationship" relationship="viewControllers" id="Kmt-fY-3Sb"/>
-                        <segue destination="yns-j3-kxL" kind="relationship" relationship="viewControllers" id="Dvo-Fo-VuF"/>
-                        <segue destination="uul-z4-UXw" kind="relationship" relationship="viewControllers" id="gjc-FU-0IU"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gKr-BK-J2t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -384,7 +297,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEI-Qq-gdq">
-                                                                    <rect key="frame" x="10" y="7.5" width="30.000000000000014" height="35"/>
+                                                                    <rect key="frame" x="10" y="7.5" width="30" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="X8W-Y7-YGV"/>
                                                                         <constraint firstAttribute="width" constant="30" id="jYz-vg-fBp"/>
@@ -520,6 +433,9 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="414" height="849"/>
                                         <connections>
+                                            <outlet property="commentsCount" destination="FcF-HZ-7Cl" id="edr-tT-pez"/>
+                                            <outlet property="likesCount" destination="xiW-BX-g33" id="4bO-GR-sTl"/>
+                                            <outlet property="shareCount" destination="qwa-bi-PNB" id="29o-q4-AP3"/>
                                             <outlet property="songlabel" destination="WN5-eE-JXj" id="ynd-GD-S1f"/>
                                             <outlet property="titleHeightConstraint" destination="HP4-WC-eoa" id="Xrq-bt-dG6"/>
                                             <outlet property="titleLabel" destination="7de-tL-ls7" id="BtD-nw-Go9"/>
