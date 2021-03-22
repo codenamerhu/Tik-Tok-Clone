@@ -264,8 +264,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@TikTok_user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDO-hG-u8z">
-                                                    <rect key="frame" x="10" y="669" width="98" height="19"/>
-                                                    <fontDescription key="fontDescription" name="FuturaMaxiCGBold" family="Futura Maxi CG Bold" pointSize="16"/>
+                                                    <rect key="frame" x="10" y="672.5" width="79.5" height="15.5"/>
+                                                    <fontDescription key="fontDescription" name="FuturaMaxiCGBold" family="Futura Maxi CG Bold" pointSize="13"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
