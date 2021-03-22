@@ -297,7 +297,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                             <subviews>
                                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEI-Qq-gdq">
-                                                                    <rect key="frame" x="10" y="7.5" width="30.000000000000014" height="35"/>
+                                                                    <rect key="frame" x="10" y="7.5" width="30" height="35"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="35" id="X8W-Y7-YGV"/>
                                                                         <constraint firstAttribute="width" constant="30" id="jYz-vg-fBp"/>

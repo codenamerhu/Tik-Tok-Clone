@@ -60,21 +60,6 @@ class HomeViewViewController: UIViewController {
         super.viewDidAppear(animated)
         pausePlayeVideos()
     }
-    /*
-    func snapToNearestCell(scrollView: UIScrollView) {
-         let middlePoint = Int(scrollView.contentOffset.x + UIScreen.main.bounds.width / 2)
-         if let indexPath = self.collectionView.indexPathForItem(at: CGPoint(x: middlePoint, y: 0)) {
-              self.collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
-         }
-    }
-    
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        self.snapToNearestCell(scrollView: scrollView)
-    }
-
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        self.snapToNearestCell(scrollView: scrollView)
-    } */
 
 }
 
@@ -89,12 +74,6 @@ extension HomeViewViewController : UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "post", for: indexPath) as! PostCollectionViewCell
-//
-//        cell.pauseVid()
-        print("v: \(indexPath.row) didEnd")
-        
-        
         if let videoCell = cell as? ASAutoPlayVideoLayerContainer, let _ = videoCell.videoURL {
             ASVideoPlayerController.sharedVideoPlayer.removeLayerFor(cell: videoCell)
         }
@@ -124,11 +103,10 @@ extension HomeViewViewController : UICollectionViewDelegate {
 extension HomeViewViewController : UICollectionViewDataSource, UICollectionViewDataSourcePrefetching{
     func collectionView(_ collectionView: UICollectionView, prefetchItemsAt indexPaths: [IndexPath]) {
             for indexPath in indexPaths {
-            let model = tiktokAr[indexPath.row]
             //asyncFetcher.fetchAsync(model.identifier)
-                
                 if let cell = collectionView.cellForItem(at: indexPath) as? PostCollectionViewCell {
                  ////
+                    let model = tiktokAr[indexPath.row]
                     cell.bindDtata(tok: model)
                 }
         }
