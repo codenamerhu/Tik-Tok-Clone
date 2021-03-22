@@ -21,8 +21,8 @@
 		50C0762825DE4674002540D9 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762725DE4674002540D9 /* HomeViewViewController.swift */; };
 		50C0762A25DE4DE3002540D9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */; };
 		E50D282826091C8600A10F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50D282726091C8600A10F14 /* Assets.xcassets */; };
+		E50D282B2609208B00A10F14 /* Futura Maxi CG Bold Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E50D282A2609208B00A10F14 /* Futura Maxi CG Bold Regular.ttf */; };
 		E51797C825FE340800AE4C90 /* ASVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51797C725FE340800AE4C90 /* ASVideoPlayerController.swift */; };
-		E51D3C7D2603FCD500910EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51D3C7C2603FCD400910EED /* Assets.xcassets */; };
 		E52668A325FFF26900D59324 /* ImageView extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52668A225FFF26900D59324 /* ImageView extension.swift */; };
 		E526FDA925FCD9DE0081BFE6 /* Toks.json in Resources */ = {isa = PBXBuildFile; fileRef = E526FDA825FCD9DE0081BFE6 /* Toks.json */; };
 		E526FDAB25FCDD340081BFE6 /* LocalFilesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */; };
@@ -70,8 +70,8 @@
 		50C0762725DE4674002540D9 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		E50D282726091C8600A10F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E50D282A2609208B00A10F14 /* Futura Maxi CG Bold Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Futura Maxi CG Bold Regular.ttf"; path = "../../../../../Downloads/Futura Maxi CG Bold Regular.ttf"; sourceTree = "<group>"; };
 		E51797C725FE340800AE4C90 /* ASVideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVideoPlayerController.swift; sourceTree = "<group>"; };
-		E51D3C7C2603FCD400910EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		E52668A225FFF26900D59324 /* ImageView extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView extension.swift"; sourceTree = "<group>"; };
 		E526FDA825FCD9DE0081BFE6 /* Toks.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Toks.json; sourceTree = "<group>"; };
 		E526FDAA25FCDD340081BFE6 /* LocalFilesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFilesViewModel.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		50C075E925DD83A0002540D9 /* Tik Tok */ = {
 			isa = PBXGroup;
 			children = (
-				E51D3C7C2603FCD400910EED /* Assets.xcassets */,
+				E50D28292609200600A10F14 /* customfonts */,
 				E50D282726091C8600A10F14 /* Assets.xcassets */,
 				E5313BE12602EE5600F3EF21 /* Controllers */,
 				E52668A125FFF23F00D59324 /* Utils */,
@@ -172,6 +172,14 @@
 				50C0761125DD83AC002540D9 /* Info.plist */,
 			);
 			path = "Tik TokUITests";
+			sourceTree = "<group>";
+		};
+		E50D28292609200600A10F14 /* customfonts */ = {
+			isa = PBXGroup;
+			children = (
+				E50D282A2609208B00A10F14 /* Futura Maxi CG Bold Regular.ttf */,
+			);
+			path = customfonts;
 			sourceTree = "<group>";
 		};
 		E51797C625FE33BD00AE4C90 /* VideoPlayLibrary */ = {
@@ -313,9 +321,9 @@
 			files = (
 				50C075FA25DD83AB002540D9 /* LaunchScreen.storyboard in Resources */,
 				E526FDA925FCD9DE0081BFE6 /* Toks.json in Resources */,
-				E51D3C7D2603FCD500910EED /* Assets.xcassets in Resources */,
 				50C075F225DD83A0002540D9 /* Main.storyboard in Resources */,
 				E50D282826091C8600A10F14 /* Assets.xcassets in Resources */,
+				E50D282B2609208B00A10F14 /* Futura Maxi CG Bold Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
