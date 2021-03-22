@@ -20,6 +20,7 @@
 		50C0762625DE439F002540D9 /* TikTabBarControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762525DE439F002540D9 /* TikTabBarControllerViewController.swift */; };
 		50C0762825DE4674002540D9 /* HomeViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762725DE4674002540D9 /* HomeViewViewController.swift */; };
 		50C0762A25DE4DE3002540D9 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */; };
+		E50D282826091C8600A10F14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E50D282726091C8600A10F14 /* Assets.xcassets */; };
 		E51797C825FE340800AE4C90 /* ASVideoPlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51797C725FE340800AE4C90 /* ASVideoPlayerController.swift */; };
 		E51D3C7D2603FCD500910EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51D3C7C2603FCD400910EED /* Assets.xcassets */; };
 		E52668A325FFF26900D59324 /* ImageView extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52668A225FFF26900D59324 /* ImageView extension.swift */; };
@@ -68,6 +69,7 @@
 		50C0762525DE439F002540D9 /* TikTabBarControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TikTabBarControllerViewController.swift; sourceTree = "<group>"; };
 		50C0762725DE4674002540D9 /* HomeViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewViewController.swift; sourceTree = "<group>"; };
 		50C0762925DE4DE3002540D9 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		E50D282726091C8600A10F14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E51797C725FE340800AE4C90 /* ASVideoPlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASVideoPlayerController.swift; sourceTree = "<group>"; };
 		E51D3C7C2603FCD400910EED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		E52668A225FFF26900D59324 /* ImageView extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView extension.swift"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E51D3C7C2603FCD400910EED /* Assets.xcassets */,
+				E50D282726091C8600A10F14 /* Assets.xcassets */,
 				E5313BE12602EE5600F3EF21 /* Controllers */,
 				E52668A125FFF23F00D59324 /* Utils */,
 				E51797C625FE33BD00AE4C90 /* VideoPlayLibrary */,
@@ -312,6 +315,7 @@
 				E526FDA925FCD9DE0081BFE6 /* Toks.json in Resources */,
 				E51D3C7D2603FCD500910EED /* Assets.xcassets in Resources */,
 				50C075F225DD83A0002540D9 /* Main.storyboard in Resources */,
+				E50D282826091C8600A10F14 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
