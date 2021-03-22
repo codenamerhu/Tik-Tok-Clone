@@ -1,6 +1,6 @@
 # Tik-Tok-Clone
 
-Play/pause videos automatically in UITCollectionView when an UICollectionViewCell is in focus
+Play/pause videos automatically in UICollectionView when an UICollectionViewCell is in focus
 
 * Autolayout UI that is similar to tik tok
 * Automatic video play when video view is visible and option to easily pause/play any video
