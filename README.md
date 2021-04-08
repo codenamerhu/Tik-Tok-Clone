@@ -11,3 +11,5 @@ Play/pause videos automatically in UICollectionView when an UICollectionViewCell
 completely downloaded ensuring the main thead is never blocked
 * Option to provide different bit rate for videos
 * Works when the app comes again from background
+
+<img src="files/tik.png" width="340">
